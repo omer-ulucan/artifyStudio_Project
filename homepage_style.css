@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+* {
+margin: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+background-color: rgb(220, 182, 132);
+}
+
+a {
+text-decoration: none;
+}
+
+ul li {
+list-style: none;
+}
+
+.container {
+width: 80%;
+margin: auto;
+}
+
+.header {
+height: 250px;
+}
+.logo img{
+    height: 180px;
+}
+.navbar {
+width: auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 100%;
+margin-top: 10px;
+margin-bottom: 50px;
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    display: flex;
+}
+ul li {
+    margin: 0 55px;
+}
+ul li a {
+padding: 3px 30px;
+color: black;
+font-size: 16px;
+font-weight: 600;
+transition: color 0.8s;
+}
+
+ul li a:hover{
+    color: rgb(255,167,61);
+    padding: 10px 30px;
+    border-radius: 25px;
+    background-color: rgb(97,56,1);
+}
+
+
+.menu-btn{
+    border: none;
+}
+
+.menu-btn a{
+    font-size: 15px;
+    color: white;
+    display: inline-block;
+    background-color: rgb(82, 46, 20);
+    padding: 15px 45px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 0 rgb(129, 60, 11) ;
+    transition: 1.5s;
+}
+.menu-btn a:hover{
+    color: black;
+box-shadow: inset 400px 0 0 0 rgb(255, 152, 25);;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.col2{
+    flex-basis: 50%;
+}
+.container .box{
+    width: 500px;
+}
+.container .box img{
+    width: 700px;
+    position: relative;
+}
+.col-2 h1{
+    font-size: 3rem;
+    color: rgb(213, 87, 19);
+}
+
+.col-2 #span1{
+    font-size: 4rem;
+    margin-left: 50px !important;
+    line-height: 0px;
+    padding: 0;
+ }
+.col-2 #span2{
+    font-size: 4rem;
+    margin-left: 20px !important;
+    line-height: 0px;
+}
+
+.col-2 p{
+    margin: 15px 0;
+    font-weight: 400;
+}
+/*MASTERPIECE BASLANGIC*/
+.masterpieces{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 80px;
+}
+.mp_container{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.mp_container .mp{
+    flex-basis: 50%;
+}
+.mp_text h1{
+    margin-left: 40px;
+    font-size: 3rem;
+    color: rgb(213, 87, 19);
+}
+.mp_text #mp_s1{
+    font-size: 4rem;
+    margin-left: 60px !important;
+    line-height: 0px;
+    padding: 0;
+}
+.mp_text #mp_s2{
+    font-size: 4rem;
+    margin-right: 40px !important;
+    line-height: 0px;
+}
+#mp_btn{
+    display: inline-block;
+    color: black;
+    border: 2px solid  rgb(82, 46, 20);;
+    border-inline-color: rgb(82, 46, 20);
+    padding: 15px 45px;
+    border-radius: 45px;
+    margin-top: 15px;
+    margin-left: 50%;
+    box-shadow: inset 0 0 0 0 rgb(129, 60, 11) ;
+    transition: 1.5s;
+}
+#mp_btn:hover{
+    color: whitesmoke;
+    box-shadow: inset 400px 0 0 0 rgb(255, 152, 25);
+    border: 2px inset solid rgb(255, 152, 25);
+}
+.mp_slide{
+    margin:0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.frame{
+    overflow: hidden;
+    border: 4px solid whitesmoke;
+}
+.gallery{
+    position: relative;
+    width: 800%;
+    left:0;
+    animation: 30s slayt infinite;
+}
+.gallery img{
+    width: 12.5%;
+    float: left;
+}
+
+@keyframes slayt{
+    7.14%{left:0%;}
+    14.28%{left:0%;}
+    21%{left:-100%;}
+    28.57%{left:-100%;}
+    35.71%{left:-200%;}
+    42.85%{left:-200%;}
+    50%{left:-300%;}
+    57.14%{left: -300%;}
+    64.28%{left: -400%;}
+    71.42%{left: -400%;}
+    78.57%{left: -500%;}
+    85.71%{left: -500%;}
+}
+/*MASTERPIECE BITIS*/
+
+/*ARTISTS BASLANGIC*/
+body{overflow-x: hidden;}
+        .content{
+            height: 100vh;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .content .item{
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            transition: all ease 0.8s;
+        }
+        .content .item img{
+            z-index: 1;
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+        .content .item:hover{
+            width: 200%;
+        }
+
+        .content .item .text{
+            background-color: transparent;
+            position: absolute;
+            left: 0;
+            bottom: -50px;
+            width: 100%;
+            height: 100%;
+            padding: 50px 50px 100px;
+            color: sandybrown;
+            display: flex;
+            align-items: flex-end;
+            opacity: 0;
+            transition: all ease 0.5s 0.2s;
+        }
+        .content .item:hover .text{
+            background-color: transparent;
+            opacity: 1;
+            bottom: 0;
+        }
+        .content .item .text h3{
+            background-color: transparent;
+            font-size: 30px;
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
+        .text-inner{background-color: transparent;}
+/*ARTISTS BITIS*/
